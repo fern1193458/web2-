@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Concurso de Programación</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-5">
+                <div class="title">Bienvenido al Concurso de Programación</div>
+                <form id="programmingContestForm" action="process.php" method="post">
+                    <div class="form-group">
+                        <label for="documento">Documento:</label>
+                        <input type="text" class="form-control" name="documento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input type="number" class="form-control" name="edad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="semestre">Semestre o Año Cursado:</label>
+                        <input type="text" class="form-control" name="semestre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lenguaje">Lenguaje de Programación:</label>
+                        <select class="form-control" name="lenguaje" required>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="c#">C#</option>
+                        <option value="php">PHP</option>
+                        <!-- Agrega más opciones según tus necesidades -->
+                    </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-secondary" onclick="limpiarCampos()">Limpiar Campos</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

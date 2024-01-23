@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(to bottom, #17191b, #03101a);
+    background-size: cover;
+    background-position: center;
+    color: #792d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(177, 65, 65, 0.8);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #800080;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
